@@ -33,7 +33,7 @@ output "sample4" {
 
 # List Variable type
 variable "sample5" {
-  deafult = [
+  default = [
   100,
   "abc",
   "xyz"
