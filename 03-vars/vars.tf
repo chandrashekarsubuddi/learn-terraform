@@ -34,3 +34,12 @@ variable "sample5" {
   "xyz"
   ]
 }
+
+# Map Variable type
+variable "sample6" {
+  default = {
+    number = 100
+    string = "xyz"
+    boolean = false
+  }
+}
