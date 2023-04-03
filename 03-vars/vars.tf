@@ -26,15 +26,23 @@ variable "sample4" {
   default = 100
 }
 
+output "sample4" {
+  value = var.sample4
+
+}
+
 # List Variable type
 variable "sample5" {
   deafult = [
   100,
-  "abc"
+  "abc",
   "xyz"
   ]
 }
 
+output "sample5" {
+  value = var.sample5[1]
+}
 # Map Variable type
 variable "sample6" {
   default = {
@@ -42,4 +50,8 @@ variable "sample6" {
     string = "xyz"
     boolean = false
   }
+}
+
+output "sample6" {
+  value = var.sample6["number"]
 }
