@@ -20,3 +20,17 @@ variable "sample2" {
 variable "sample3" {
   default = true
 }
+
+# Default Variable type
+variable "sample4" {
+  default = 100
+}
+
+# List Variable type
+variable "sample5" {
+  deafult = [
+  100,
+  "abc"
+  "xyz"
+  ]
+}
