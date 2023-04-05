@@ -16,5 +16,5 @@ data "aws_ami" "centos8" {
 }
 
 output "instance_profile" {
-  value = aws_instance.web.output
+  value = try(aws_instance.web.output, "")
 }
