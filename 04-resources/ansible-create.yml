@@ -1,0 +1,10 @@
+- name: Create Instance
+  hosts: localhost
+  tasks:
+    - name: start an instance with metadata options
+      amazon.aws.ec2_instance:
+        instance_type: t3.micro
+        image_id: ami-0089b8e98cd95257d
+        tags:
+          Environment: ansible-test
+        
