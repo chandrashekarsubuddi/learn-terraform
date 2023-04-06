@@ -20,7 +20,9 @@ output "publicip" {
   #value = aws_instance.web.public_ip
 
   #with count
-  value = aws_instance.web
+  value = {
+    for k,v in aws_instance.web : k => v.public_ip
+  }
 }
 
 variable "components" {
