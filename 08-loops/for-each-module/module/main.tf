@@ -24,7 +24,9 @@ data "aws_ami" "centos8" {
 #  }
 #}
 
-variable "instance_type" {}
+variable "instance_type" {
+  default = "t3.micro"
+}
 variable "name" {}
 
 output "ec2" {
