@@ -26,6 +26,7 @@ resource "null_resource" "provision" {
       user = "centos"
       password = "DevOps321"
     }
+
     inline = [
       "echo Helo"
     ]
