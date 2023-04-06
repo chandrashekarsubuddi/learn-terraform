@@ -22,11 +22,10 @@ resource "aws_instance" "web" {
     host = self.public_ip
     user = "centos"
     password = "DevOps321"
-
+  }
     inline = [
       "false"
     ]
-  }
   }
 
 }
