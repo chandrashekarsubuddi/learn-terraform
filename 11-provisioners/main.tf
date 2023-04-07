@@ -15,6 +15,7 @@ resource "aws_instance" "web" {
 
   tags = {
     name = "test-centos8"
+    environment = "dev"
   }
 
 }
